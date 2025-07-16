@@ -1,0 +1,527 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ArtadaArsitek - Jasa Arsitektur Profesional</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-image {
+            background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6));
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.2);
+        }
+        
+        .portfolio-item:hover .portfolio-overlay {
+            opacity: 1;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navbar -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="text-2xl font-bold text-indigo-700">Artada<span class="text-gray-800">Arsitek</span></a>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="font-medium text-gray-700 hover:text-indigo-600 transition">Beranda</a>
+                <a href="#services" class="font-medium text-gray-700 hover:text-indigo-600 transition">Layanan</a>
+                <a href="#portfolio" class="font-medium text-gray-700 hover:text-indigo-600 transition">Portfolio</a>
+                <a href="#about" class="font-medium text-gray-700 hover:text-indigo-600 transition">Tentang</a>
+                <a href="#contact" class="font-medium text-gray-700 hover:text-indigo-600 transition">Kontak</a>
+            </nav>
+            
+            <button class="md:hidden focus:outline-none">
+                <i class="fas fa-bars text-2xl text-gray-700"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-image pt-32 pb-20 md:pt-40 md:pb-32 flex items-center bg-no-repeat bg-cover bg-center" style="background-image: url('https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4110cfe2-ecd2-4af8-819a-ef6b3975d176.png');">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-6xl font-bold text-white mb+6">Desain Arsitektur Berkualitas</h1>
+            <p class="text-xl md:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto">Mewujudkan impian Anda menjadi kenyataan dengan desain inovatif dan fungsional</p>
+            <a href="#contact" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-8 py-3 rounded-lg transition duration-300 inline-block">Konsultasi Gratis</a>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Layanan Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Kami menyediakan berbagai layanan arsitektur untuk memenuhi kebutuhan properti Anda</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg transition duration-300">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-home text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Desain Rumah</h3>
+                    <p class="text-gray-600">Desain rumah impian Anda dengan sentuhan profesional yang memperhatikan setiap detail.</p>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg transition duration-300">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-building text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Desain Komersial</h3>
+                    <p class="text-gray-600">Konsep arsitektur untuk bangunan komersial yang fungsional dan menarik pelanggan.</p>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg transition duration-300">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-pencil-ruler text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Renovasi</h3>
+                    <p class="text-gray-600">Transformasi ruang dengan pendekatan kreatif untuk meningkatkan fungsi dan estetika.</p>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg transition duration-300">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-tree text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Landscape</h3>
+                    <p class="text-gray-600">Desain eksterior yang harmonis dengan alam untuk menciptakan lingkungan yang asri.</p>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg transition duration-300">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-file-alt text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Persetujuan Bangunan</h3>
+                    <p class="text-gray-600">Bantuan dalam pengurusan perizinan dan dokumen konstruksi sesuai regulasi (PBG & SLF).</p>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-lg transition duration-300">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-eye text-indigo-600 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">3D Visualization</h3>
+                    <p class="text-gray-600">Presentasi desain dalam bentuk 3D untuk membantu visualisasi sebelum dibangun.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Portfolio Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Beberapa pekerjaan terbaik kami yang telah menyelesaikan berbagai proyek arsitektur</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Project 1 -->
+                <div class="portfolio-item relative overflow-hidden rounded-xl">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/63945351-e545-49ca-a1f2-12171e81cca7.png" alt="Modern minimalis rumah tinggal dua lantai dengan konsep terbuka dan taman kecil di depan" class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay absolute inset-0 bg-indigo-800 bg-opacity-80 flex items-center justify-center opacity-0 transition duration-300 p-6">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-bold mb-2">Rumah Minimalis Taman Anggrek</h3>
+                            <p class="text-sm">Konsep terbuka dengan pencahayaan alami optimal</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="portfolio-item relative overflow-hidden rounded-xl">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/a8ba9f25-f69d-4531-b19b-bb6e7c1247ec.png" alt="Bangunan perkantoran modern lima lantai dengan fasad kaca dan struktur beton ekspos" class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay absolute inset-0 bg-indigo-800 bg-opacity-80 flex items-center justify-center opacity-0 transition duration-300 p-6">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-bold mb-2">Kantor Pusat Finansial</h3>
+                            <p class="text-sm">Desain hemat energi dengan konsep green building</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="portfolio-item relative overflow-hidden rounded-xl">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/62366e75-6e1f-4a7b-b087-6d2c2cdf90fe.png" alt="Vila mewah di bukit dengan pemandangan lembah dan kolam renang infinity" class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay absolute inset-0 bg-indigo-800 bg-opacity-80 flex items-center justify-center opacity-0 transition duration-300 p-6">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-bold mb-2">Villa Bukit Mewah</h3>
+                            <p class="text-sm">Harmoni antara alam dan arsitektur modern</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="portfolio-item relative overflow-hidden rounded-xl">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/af22e789-d2b3-4036-a96f-5ae660b98daf.png" alt="Interior kafe dengan nuansa industrial chic, kombinasi kayu, logam, dan tanaman hias" class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay absolute inset-0 bg-indigo-800 bg-opacity-80 flex items-center justify-center opacity-0 transition duration-300 p-6">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-bold mb-2">Kafe Industrial Chic</h3>
+                            <p class="text-sm">Konsep unik untuk pengalaman bersantap berbeda</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="portfolio-item relative overflow-hidden rounded-xl">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/85a26317-71ae-4c24-b07b-d4bc670fe238.png" alt="Taman kota dengan area bermain anak, jalur jogging, dan amphiteater kecil" class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay absolute inset-0 bg-indigo-800 bg-opacity-80 flex items-center justify-center opacity-0 transition duration-300 p-6">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-bold mb-2">Taman Kota Multifungsi</h3>
+                            <p class="text-sm">Ruang publik yang inklusif dan ramah lingkungan</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="portfolio-item relative overflow-hidden rounded-xl">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/03a45297-6792-4ff5-8ecb-23259bf2213c.png" alt="Renovasi rumah klasik menjadi modern dengan tetap mempertahankan elemen heritage" class="w-full h-64 object-cover">
+                    <div class="portfolio-overlay absolute inset-0 bg-indigo-800 bg-opacity-80 flex items-center justify-center opacity-0 transition duration-300 p-6">
+                        <div class="text-center text-white">
+                            <h3 class="text-xl font-bold mb-2">Transformasi Rumah Klasik</h3>
+                            <p class="text-sm">Perpaduan modern dan nilai historis yang terjaga</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#" class="text-indigo-600 font-medium hover:text-indigo-800 transition flex items-center justify-center">
+                    Lihat Semua Proyek
+                    <i class="fas fa-arrow-right ml-2"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f7aafe71-4b71-460c-83c3-4e85abaf133d.png" alt="Tim arsitek profesional sedang berdiskusi di atas meja dengan gambar desain dan laptop" class="rounded-xl shadow-lg w-full">
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Tentang Kami</h2>
+                    <p class="text-gray-600 mb-6">
+                        Artada Arsitek adalah firma arsitektur berbasis di Indonesia tepatnya di kendal dengan pengalaman lebih dari 10 tahun dalam menciptakan ruang yang inspiratif, fungsional, dan estetik. Kami percaya bahwa desain yang baik adalah perpaduan antara kreativitas, fungsi, dan keberlanjutan. Selain layanan desain arsitektur, kami juga menyediakan layanan sebagai konsultan perencanaan PGB & SLF.
+                    </p>
+                    
+                    <div class="space-y-4">
+                        <div class="flex items-start">
+                            <div class="bg-indigo-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800 mb-1">Tim Profesional</h4>
+                                <p class="text-gray-600 text-sm">Tim arsitek bersertifikat dengan berbagai spesialisasi</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-indigo-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800 mb-1">Pendekatan Personal</h4>
+                                <p class="text-gray-600 text-sm">Setiap proyek ditangani dengan pendekatan khusus sesuai kebutuhan klien</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-indigo-100 p-2 rounded-full mr-4">
+                                <i class="fas fa-check text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800 mb-1">Desain Berkelanjutan</h4>
+                                <p class="text-gray-600 text-sm">Menerapkan prinsip green architecture dalam setiap desain</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contact" class="mt-8 inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-6 py-3 rounded-lg transition duration-300">Hubungi Kami</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-indigo-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Apa Kata Klien Kami</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto">Testimoni dari beberapa klien yang telah menggunakan jasa kami</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/fbca02cd-fe7d-4d8a-9fdf-37d641686283.png" alt="Pria paruh baya tersenyum dengan latar belakang buram" class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Budi Santoso</h4>
+                            <p class="text-gray-600 text-sm">Pemilik Rumah</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "Sangat puas dengan hasil desain rumah dari Artada Arsitek. Mereka mendengarkan kebutuhan kami dan menerjemahkannya ke dalam desain yang indah dan fungsional."
+                    </p>
+                    <div class="mt-4 text-indigo-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7b6e4d2d-8759-4c1c-92ad-95a72938158f.png" alt="Wanita profesional dengan kemeja formal dan rambut pendek tersenyum" class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Dewi Ratnasari</h4>
+                            <p class="text-gray-600 text-sm">Manajer Properti</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "Kerja sama yang sangat profesional. Tim Artada Arsitek mampu menyelesaikan proyek kantor kami tepat waktu dengan hasil yang melebihi ekspektasi."
+                    </p>
+                    <div class="mt-4 text-indigo-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/59e2be87-3333-4b30-b08d-7fb93fe4d0d7.png" alt="Pasangan muda berdampingan dengan ekspresi bahagia" class="w-16 h-16 rounded-full object-cover mr-4">
+                        <div>
+                            <h4 class="font-bold text-gray-800">Agus & Rina</h4>
+                            <p class="text-gray-600 text-sm">Klien Residential</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-600">
+                        "Proses renovasi rumah kami berjalan dengan lancar berkat bantuan Artada Arsitek. Mereka memberikan solusi kreatif untuk rumah kami yang terbatas lahannya."
+                    </p>
+                    <div class="mt-4 text-indigo-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star-half-alt"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col lg:flex-row">
+                <div class="lg:w-1/2 mb-12 lg:mb-0 lg:pr-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Hubungi Kami</h2>
+                    <p class="text-gray-600 mb-8">
+                        Silahkan isi form di samping untuk berkonsultasi tentang proyek Anda. Kami akan menghubungi Anda segera setelah pesan diterima.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-map-marker-alt text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800 mb-1">Lokasi Kantor</h4>
+                                <p class="text-gray-600">Jl. Mangga Utara II No.14, Purin, Patebon, Kendal</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-phone-alt text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800 mb-1">Telepon</h4>
+                                <p class="text-gray-600">+62 821 2863 0115</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-envelope text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800 mb-1">Email</h4>
+                                <p class="text-gray-600">artada.co@gmail.com</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="bg-indigo-100 p-3 rounded-full mr-4">
+                                <i class="fas fa-clock text-indigo-600"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-medium text-gray-800 mb-1">Jam Kerja</h4>
+                                <p class="text-gray-600">Senin - Jumat: 08.00 - 16.30 WIB</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <form class="bg-gray-50 p-8 rounded-xl shadow-md">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Nama Lengkap</label>
+                            <input type="text" id="name" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="Masukkan nama Anda">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Email</label>
+                            <input type="email" id="email" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="Masukkan email Anda">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Nomor Telepon</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="Masukkan nomor telepon Anda">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="service" class="block text-gray-700 font-medium mb-2">Jenis Layanan</label>
+                            <select id="service" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent">
+                                <option value="">Pilih layanan yang dibutuhkan</option>
+                                <option value="house-design">Desain Rumah</option>
+                                <option value="commercial-design">Desain Komersial</option>
+                                <option value="renovation">Renovasi</option>
+                                <option value="landscape">Landscape</option>
+                                <option value="permit">Persetujuan Bangunan</option>
+                                <option value="visualization">3D Visualization</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Pesan Anda</label>
+                            <textarea id="message" rows="5" class="w-full px-4 py-3 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:border-transparent" placeholder="Deskripsikan proyek atau kebutuhan Anda"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-6 py-3 rounded-lg transition duration-300">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <h3 class="text-2xl font-bold text-white mb-4">Artada<span class="text-indigo-400">Arsitek</span></h3>
+                    <p class="text-gray-400 mb-4">
+                        Menciptakan ruang bermakna melalui desain arsitektur yang inovatif, fungsional, dan berkelanjutan.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white transition">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-medium mb-4">Tautan Cepat</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#home" class="text-gray-400 hover:text-white transition">Beranda</a></li>
+                        <li><a href="#services" class="text-gray-400 hover:text-white transition">Layanan</a></li>
+                        <li><a href="#portfolio" class="text-gray-400 hover:text-white transition">Portfolio</a></li>
+                        <li><a href="#about" class="text-gray-400 hover:text-white transition">Tentang</a></li>
+                        <li><a href="#contact" class="text-gray-400 hover:text-white transition">Kontak</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-medium mb-4">Layanan</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Desain Rumah</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Desain Komersial</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Renovasi</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">Landscape</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition">3D Visualization</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 text-center text-gray-400">
+                <p>© 2023 ArtadaArsitek. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" id="back-to-top" class="fixed bottom-8 right-8 bg-indigo-600 text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition opacity-0 invisible hover:bg-indigo-700">
+        <i class="fas fa-arrow-up"></i>
+    </a>
+
+    <script>
+        // Back to Top Button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+
+        // Mobile Menu Toggle (placeholder for functionality)
+        document.querySelector('button.md\\:hidden').addEventListener('click', function() {
+            alert('Menu mobile akan ditampilkan di sini dalam implementasi lengkapnya.');
+        });
+
+        // Form submission
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Terima kasih atas pesan Anda! Kami akan segera menghubungi Anda.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
+
+```
